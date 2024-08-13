@@ -1,7 +1,39 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function Calculadora (numero01, numero02, operador){
+  let num1 = parseInt(numero01)
+  let num2 = parseInt(numero02)
+  switch(operador){
+    case '+' :
+      return (num1 + num2)
+      break
+    case '-' :
+      return (num1 - num2)
+      break 
+    case '*' :
+      return (num1 * num2)
+      break
+    case '/' :
+      return (num1 / num2 )
+      break
+    
+  // So este que não entendi direito e tive que buscar 
+      case 'e' :
+      let resultado = 1
+      for(let i = 0; i < num2; i++) {
+        resultado *= num1}
+        return resultado
+ // e kkkkkkkkkkkkk
+    default :
+      return 'Deu algum erro'
+      break
 
-//ESCREVA SEU CÓDIGO AQUI!!
+    }
+    if( resultado === undefined || resultado > 1000000){
+      return resultado = 'ERRO'
+    }
+}
+ 
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
